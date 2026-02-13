@@ -6,13 +6,13 @@ Características
 
 CRUD Completo de Clientes**: Crear, leer, actualizar y eliminar clientes
 CRUD Completo de Autos**: Gestión total de vehículos registrados
-- 🔗 **Relación Cliente-Auto**: Un cliente puede tener múltiples autos
-- 💾 **Persistencia MySQL**: Datos almacenados permanentemente
-- 🎨 **Interfaz Moderna**: Diseño con efecto **Liquid Glass (Glassmorfismo)**
-- 🖼️ **Imagen de Fondo**: Auto clásico visible a través del efecto vidrio
-- ✨ **Efectos Visuales**: Blur, transparencias, animaciones suaves
-- 📱 **Responsive**: Funciona en desktop y móviles
-- 🔍 **Validaciones**: Placas únicas, emails únicos, campos requeridos
+- **Relación Cliente-Auto**: Un cliente puede tener múltiples autos
+- **Persistencia MySQL**: Datos almacenados permanentemente
+- **Interfaz Moderna**: Diseño con efecto **Liquid Glass (Glassmorfismo)**
+- **Imagen de Fondo**: Auto clásico visible a través del efecto vidrio
+- **Efectos Visuales**: Blur, transparencias, animaciones suaves
+- **Responsive**: Funciona en desktop y móviles
+- **Validaciones**: Placas únicas, emails únicos, campos requeridos
 
 Estructura de la Base de Datos
 
@@ -299,6 +299,7 @@ SELECT * FROM autos WHERE placas LIKE '%ABC%';
 ### Error: "Placas ya registradas"
 - Las placas deben ser únicas
 - Usa otras placas o edita el auto existente
+
 
 
 
