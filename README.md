@@ -1,11 +1,11 @@
-# 🚗 Sistema de Registro de Autos
+Sistema de Registro de Autos
 
 Sistema CRUD completo para gestionar el registro de vehículos y sus propietarios con base de datos MySQL.
 
-## 🚀 Características
+Características
 
-- ✅ **CRUD Completo de Clientes**: Crear, leer, actualizar y eliminar clientes
-- ✅ **CRUD Completo de Autos**: Gestión total de vehículos registrados
+CRUD Completo de Clientes**: Crear, leer, actualizar y eliminar clientes
+CRUD Completo de Autos**: Gestión total de vehículos registrados
 - 🔗 **Relación Cliente-Auto**: Un cliente puede tener múltiples autos
 - 💾 **Persistencia MySQL**: Datos almacenados permanentemente
 - 🎨 **Interfaz Moderna**: Diseño con efecto **Liquid Glass (Glassmorfismo)**
@@ -14,7 +14,7 @@ Sistema CRUD completo para gestionar el registro de vehículos y sus propietario
 - 📱 **Responsive**: Funciona en desktop y móviles
 - 🔍 **Validaciones**: Placas únicas, emails únicos, campos requeridos
 
-## 📋 Estructura de la Base de Datos
+Estructura de la Base de Datos
 
 ### Tabla: `clientes`
 | Campo | Tipo | Descripción |
@@ -43,7 +43,7 @@ Sistema CRUD completo para gestionar el registro de vehículos y sus propietario
 
 **Relación**: Cada auto pertenece a un cliente (ON DELETE CASCADE)
 
-## 🛠️ Instalación
+## Instalación
 
 ### 1. Configurar MySQL en XAMPP
 
@@ -73,11 +73,7 @@ npm install
 npm start
 ```
 
-Deberías ver:
-```
-✅ Conexión exitosa a MySQL
-✅ Servidor escuchando en http://localhost:3000
-📁 Interfaz disponible en http://localhost:3000/index.html
+
 ```
 
 ### 5. Acceder a la Aplicación
@@ -87,7 +83,7 @@ Abre en tu navegador:
 http://localhost:3000/registro-autos.html
 ```
 
-## 📡 API REST
+## API REST
 
 ### Endpoints de Clientes
 
@@ -183,18 +179,18 @@ Content-Type: application/json
 DELETE /api/autos/:id
 ```
 
-## 🎨 Interfaz de Usuario
+## Interfaz de Usuario
 
 ### Estilo Liquid Glass (Glassmorfismo)
 La interfaz utiliza un diseño moderno de **glassmorfismo/liquid glass** con las siguientes características:
 
 #### Efectos Visuales
-- 🔮 **Backdrop Blur**: Desenfoque de 20-40px que permite ver el fondo
-- 💎 **Transparencias**: Elements con rgba(255,255,255, 0.08-0.25)
-- ✨ **Bordes Luminosos**: Bordes sutiles con rgba(255,255,255, 0.15-0.4)
-- 🌟 **Sombras Suaves**: Box-shadows con inset para efecto 3D
-- 🎭 **Overlay Gradiente**: Fondo con gradiente rgba(0,0,0, 0.4-0.6)
-- 💫 **Animaciones**: fadeInUp suaves al cargar, hover effects
+- **Backdrop Blur**: Desenfoque de 20-40px que permite ver el fondo
+- **Transparencias**: Elements con rgba(255,255,255, 0.08-0.25)
+- **Bordes Luminosos**: Bordes sutiles con rgba(255,255,255, 0.15-0.4)
+- **Sombras Suaves**: Box-shadows con inset para efecto 3D
+- **Overlay Gradiente**: Fondo con gradiente rgba(0,0,0, 0.4-0.6)
+- **Animaciones**: fadeInUp suaves al cargar, hover effects
 
 #### Componentes con Efecto Glass
 - **Cards**: Fondo transparente con blur intenso y brillo superior
@@ -217,11 +213,11 @@ La interfaz utiliza un diseño moderno de **glassmorfismo/liquid glass** con las
 - **Modal de edición**: Permite modificar información del cliente
 
 ### Características Visuales
-- ✅ Imagen de fondo del auto clásico **visible a través del glass**
-- ✅ Cards flotantes con efecto vidrio líquido
-- ✅ Tablas responsivas con scroll horizontal personalizado
-- ✅ Texto blanco con sombras para legibilidad
-- ✅ Botones con colores intuitivos:
+- Imagen de fondo del auto clásico **visible a través del glass**
+- Cards flotantes con efecto vidrio líquido
+- Tablas responsivas con scroll horizontal personalizado
+- Texto blanco con sombras para legibilidad
+- Botones con colores intuitivos:
   - **Azul**: Editar
   - **Rojo**: Eliminar
   - **Gris oscuro**: Acciones primarias
@@ -230,25 +226,25 @@ La interfaz utiliza un diseño moderno de **glassmorfismo/liquid glass** con las
 ## ⚙️ Validaciones
 
 ### Clientes
-- ✅ Nombre y apellido requeridos
-- ✅ Email único (no se pueden repetir)
-- ✅ Formato de email válido
+- Nombre y apellido requeridos
+- Email único (no se pueden repetir)
+- Formato de email válido
 
 ### Autos
-- ✅ Marca, modelo, año y placas requeridos
-- ✅ Placas únicas (no se pueden repetir)
-- ✅ Debe seleccionar un cliente existente
-- ✅ Placas se convierten automáticamente a mayúsculas
-- ✅ Año entre 1900-2099
+- Marca, modelo, año y placas requeridos
+- Placas únicas (no se pueden repetir)
+- Debe seleccionar un cliente existente
+- Placas se convierten automáticamente a mayúsculas
+- Año entre 1900-2099
 
-## 🔒 Integridad de Datos
+## Integridad de Datos
 
 - **CASCADE**: Al eliminar un cliente, se eliminan automáticamente todos sus autos
 - **FOREIGN KEY**: Los autos siempre deben tener un cliente válido
 - **UNIQUE**: Placas y emails no se pueden duplicar
 - **Índices**: Búsquedas optimizadas por placas, email, nombre
 
-## 📊 Consultas SQL Útiles
+## Consultas SQL Útiles
 
 ### Ver todos los autos con sus dueños
 ```sql
@@ -284,7 +280,7 @@ ORDER BY total_autos DESC;
 SELECT * FROM autos WHERE placas LIKE '%ABC%';
 ```
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Error: "Base de datos no encontrada"
 1. Verifica que MySQL esté corriendo en XAMPP
@@ -304,21 +300,5 @@ SELECT * FROM autos WHERE placas LIKE '%ABC%';
 - Las placas deben ser únicas
 - Usa otras placas o edita el auto existente
 
-## 🚀 Mejoras Futuras
 
-- [ ] Búsqueda y filtros avanzados
-- [ ] Exportar a PDF/Excel
-- [ ] Historial de cambios
-- [ ] Subir foto del auto
-- [ ] Alertas de vencimiento de seguros
-- [ ] Reportes estadísticos
-- [ ] Panel de dashboard
-- [ ] Autenticación de usuarios
 
-## 📄 Licencia
-
-ISC
-
----
-
-**Desarrollado para gestión eficiente de registros automotrices** 🚗
